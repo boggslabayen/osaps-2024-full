@@ -12,7 +12,7 @@ export default function page(){
         <div>
         <StickyNavbar />
         <h1 className='font-normal'>Speakers</h1>
-        <a href='/' download='xmasgift.pdf'>
+    
         <Button>Download</Button>
         </a>
         
