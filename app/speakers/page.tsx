@@ -14,7 +14,6 @@ export default function page(){
         <h1 className='font-normal'>Speakers</h1>
     
         <Button>Download</Button>
-        </a>
         
 
         </div>

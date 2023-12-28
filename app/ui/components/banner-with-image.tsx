@@ -3,7 +3,7 @@ import * as React from 'react'
 import Image from 'next/image'
 
 
-export default function BannerWithImage(props) {
+export default function BannerWithImage(props: any) {
     return (
         <div className='bg-ivory py-20 flex justify-center'>
 
