@@ -20,7 +20,7 @@ const speakers = [
     }
 ];
 
-function createSpeakerView(speakerItem){
+function createSpeakerView(speakerItem: any){
     return(
         
         
