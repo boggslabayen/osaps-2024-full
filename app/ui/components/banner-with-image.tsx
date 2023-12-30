@@ -26,7 +26,7 @@ interface BannerWithImageProps {
              <Image 
              src={props.imageSource}
              width={607}
-             height={562}
+             height={500}
              className='w-1/2 hidden lg:block'
              alt={props.imageAlt}
              />
