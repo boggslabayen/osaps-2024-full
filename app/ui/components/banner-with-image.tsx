@@ -5,7 +5,7 @@ import Image, { StaticImageData } from 'next/image'
 interface BannerWithImageProps {
     header: string;
     subheader: string;
-    src: string | StaticImageData;
+    src: string;
     imageAlt: string;
   }
 
