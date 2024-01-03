@@ -4,8 +4,7 @@ import  StickyNavbar  from "../ui/components/Navbar";
 import BannerWithImage from '../ui/components/banner-with-image';
 import Picture from './about-imagepng.png';
 import SpeakerDp from '../ui/components/speaker-dp';
-import leaf from './leaf.png';
-import Image from 'next/image';
+
 
 
 const speakers = [
@@ -103,22 +102,7 @@ export default function page(){
        
             </div>
 
-          <div className='flex justify-between relative bottom-16'>
-          <Image 
-             src={leaf}
-             width={105}
-             height={285}
-             className='relative'
-             alt='leaf-bg'
-             />
-            <Image 
-             src={leaf}
-             width={105}
-             height={385}
-             className='relative transform -scale-x-100'
-             alt='leaf-bg'
-             />
-          </div>  
+          
 
         </div>
 
