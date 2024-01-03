@@ -22,6 +22,7 @@ const config: Config = withMT({
       'blue-jay': 'hsla(214, 57%, 32%, 1)',
       'ivory': 'hsla(53, 26%, 93%, 1)',
       'coral-blue':'hsla(193, 30%, 82%, 1)',
+      'white': 'hsla(0, 0%, 100%, 1)',
     },
   },
   plugins: [],
