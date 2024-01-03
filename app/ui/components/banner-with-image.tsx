@@ -1,11 +1,11 @@
 
 import * as React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 interface BannerWithImageProps {
     header: string;
     subheader: string;
-    imageSource: string;
+    imageSource: string | StaticImageData;
     imageAlt: string;
   }
 
