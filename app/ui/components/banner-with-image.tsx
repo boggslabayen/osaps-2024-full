@@ -5,7 +5,7 @@ import Image, { StaticImageData } from 'next/image'
 interface BannerWithImageProps {
     header: string;
     subheader: string;
-    imageSource: string | StaticImageData;
+    src: string | StaticImageData;
     imageAlt: string;
   }
 
@@ -24,7 +24,7 @@ interface BannerWithImageProps {
              </div>
 
              <Image 
-             src={props.imageSource}
+             src={props.src}
              width={607}
              height={500}
              className='w-1/2 hidden lg:block'
