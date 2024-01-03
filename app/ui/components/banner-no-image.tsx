@@ -8,7 +8,7 @@ interface BannerNoImageProps {
   }
 
 
-const BannerNoImage: React.FC<BannerNoImageProps> = (props: any) => {
+const BannerNoImage: React.FC<BannerNoImageProps> = (props) => {
     return (
         <div className='bg-ivory py-20 flex justify-center'>
         <div className=' max-w-screen mx-8 lg:max-w-screen-xl'>

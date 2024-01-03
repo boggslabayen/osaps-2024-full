@@ -14,10 +14,14 @@ const config: Config = withMT({
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      scale: {
+        '-100': '-1',
+      }
     },
     colors: {
       'blue-jay': 'hsla(214, 57%, 32%, 1)',
       'ivory': 'hsla(53, 26%, 93%, 1)',
+      'coral-blue':'hsla(193, 30%, 82%, 1)',
     },
   },
   plugins: [],

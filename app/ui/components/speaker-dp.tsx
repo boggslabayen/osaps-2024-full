@@ -9,7 +9,7 @@ interface SpeakerDPProps {
   const SpeakerDp: React.FC<SpeakerDPProps> = (props) => {
     return (
        
-        <div className="w-fit">
+        <div className="px-4 py-4">
 
         
         <div className='flex justify-center'>
@@ -19,6 +19,7 @@ interface SpeakerDPProps {
         withBorder={true}
         className="p-1"
         size='xl'
+        color='white'
         />
         </div>
         
@@ -26,10 +27,10 @@ interface SpeakerDPProps {
         
 
         <div className='pt-2 text-center'>
-          <Typography variant="h6"> {props.speakerName} </Typography>
-          <Typography variant="small" color="gray" className="font-normal">
+          <h4 className='font-bold'> {props.speakerName} </h4>
+          <h4> 
           {props.role}
-          </Typography>
+          </h4>
         </div>
 
         </div>
