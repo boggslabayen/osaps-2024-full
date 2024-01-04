@@ -9,6 +9,9 @@
     Button,
     IconButton,
     Avatar,
+    Select,
+    Option,
+    Card
   } from "@material-tailwind/react";
  
 export { 
@@ -17,5 +20,8 @@ export {
     Typography,
     Button,
     IconButton,
-    Avatar
+    Avatar,
+    Select,
+    Option,
+    Card
  };

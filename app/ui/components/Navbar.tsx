@@ -35,7 +35,7 @@ export default function StickyNavbar() {
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium border-double border-2 px-4 py-2"
+            className="mr-4 cursor-pointer font-medium border-double border-2 px-4 py-2"
           >
             OSAPS 2024
           </Typography>
@@ -61,6 +61,8 @@ export default function StickyNavbar() {
           
 
                 <div className="flex items-center gap-x-1">
+                <Link href="/register">
+
                 <Button
                 variant="filled"
                 size="md"
@@ -68,6 +70,9 @@ export default function StickyNavbar() {
                  >
                 Register
                 </Button>
+                
+                </Link>
+                
               
 
                 </div>

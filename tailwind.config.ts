@@ -25,6 +25,8 @@ const config: Config = withMT({
       'white': 'hsla(0, 0%, 100%, 1)',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 });
 export default config
