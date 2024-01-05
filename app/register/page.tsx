@@ -62,7 +62,7 @@ export default function page(){
         <div className='flex justify-around py-8'>
 
 
-            <div className=' bg-gray-200 max-w-fit py-4 px-4 flex flex-col items-center mx-8'>
+            <div className='  max-w-fit py-4 px-4 flex flex-col items-center mx-8'>
 
 
             
@@ -77,7 +77,7 @@ export default function page(){
              <p className='text-center'>Complete the registration form</p>
             </div>
 
-<div className=' bg-gray-200 max-w-fit py-4 px-4 flex flex-col items-center'>
+<div className='  max-w-fit py-4 px-4 flex flex-col items-center'>
 
 
    
@@ -92,7 +92,7 @@ export default function page(){
    <p className='text-center'>Keep an eye on your e-mail for further instructions</p>
 </div>
 
-<div className=' bg-gray-200 max-w-fit py-4 px-4 flex flex-col items-center'>
+<div className=' max-w-fit py-4 px-4 flex flex-col items-center'>
 
 
    
