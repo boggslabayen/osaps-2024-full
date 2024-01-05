@@ -22,7 +22,7 @@ import icon3 from './Scenario 1 - Pre-Approved/search-circle-outline.png';
 
 export default function page(){
     return(
-        <div>
+        <div className='max-w-screen'>
         <StickyNavbar />
         
 
@@ -54,7 +54,7 @@ export default function page(){
 
          <div className='mx-auto max-w-fit lg:max-w-screen-xl my-12 '>
 
-         <h3 className='text-xl font-bold text-blue-jay'>
+         <h3 className='text-xl font-bold text-blue-jay mx-8'>
          To register, simply follow these steps:
          </h3>
 
@@ -62,7 +62,7 @@ export default function page(){
         <div className='flex justify-around py-8'>
 
 
-            <div className=' bg-gray-200 max-w-fit py-4 px-4 flex flex-col items-center'>
+            <div className=' bg-gray-200 max-w-fit py-4 px-4 flex flex-col items-center mx-8'>
 
 
             
@@ -112,7 +112,7 @@ export default function page(){
         </div>
 
         <Link href='https://forms.gle/T8PMEEi4zRDm6yN46' target='_blank'>
-            <Button variant='filled' className='bg-amber-500 rounded-full text-blue-jay items-center' size='lg' ripple={true}>Register Now</Button>
+            <Button variant='filled' className='bg-amber-500 rounded-full text-blue-jay mx-8' size='lg' ripple={true}>Register Now</Button>
             </Link>
         
         

@@ -2,6 +2,8 @@
 
 import * as React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logopng from '../images/logo_header.png'
 
 import {
   Navbar,
@@ -30,17 +32,25 @@ export default function StickyNavbar() {
 
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-8 py-6 lg:px-8 lg:py-4 bg-blue-jay">
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mx-2 md:mx-8">
 
-          <Typography
+          {/* <Typography
             as="a"
             href="#"
             className="mr-4 cursor-pointer font-medium border-double border-2 px-4 py-2"
           >
             OSAPS 2024
-          </Typography>
+          </Typography> */}
 
-          <div className='flex hidden md:block'>
+          <Image 
+             src={Logopng}
+             width={180}
+             height={60}
+             className=''
+             alt='logo OSAPS 2024'
+             />
+
+          {/* <div className='flex hidden md:block'>
                     
                
                     <Link href="/speakers" className='px-4 text-light-blue-100 hover:text-amber-900 text-md'>Speakers</Link>
@@ -52,7 +62,7 @@ export default function StickyNavbar() {
                
 
                     
-          </div>
+          </div> */}
 
           
  
@@ -119,18 +129,18 @@ export default function StickyNavbar() {
         </div>
         <Collapse open={openNav}>
 
-                <div className='text-center'>
+                {/* <div className='text-center'>
 
                     <Link href="/speakers" className='px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block'>Speakers</Link>
                     <Link href="/abstract" className='px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block'>Abstract</Link>
                     <Link href="/speakers" className='px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block'>Speakers</Link>
                     <Link href="/abstract" className='px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block'>Abstract</Link>
                     
-                </div>
+                </div> */}
           
           <div className="flex items-center gap-x-1 justify-center py-4">
             <Button  variant="filled" size="lg" className="rounded-full bg-amber-500 text-gray-800">
-              <span>Sign in</span>
+              <span>Register Now</span>
             </Button>
           </div>
         </Collapse>
