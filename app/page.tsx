@@ -17,16 +17,19 @@ import Icon001 from './ui/images/icon/001.png';
 import Icon002 from './ui/images/icon/002.png';
 import Icon003 from './ui/images/icon/003.png';
 import Icon004 from './ui/images/icon/004.png';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <main className="">
+      
+
        <StickyNavbar />
 
-       <div className='bg-coral-blue h-4/5 py-8 md:py-20'>
+       <div className='bg-coral-blue h-4/5 py-8 md:py-14'>
 
 
-        <div className='flex flex-col md:relative  right-80  z-40'>
+        <div className='flex flex-col md:relative  right-80  z-30'>
           
         
          <Image 
