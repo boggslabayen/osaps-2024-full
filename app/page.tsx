@@ -41,7 +41,7 @@ export default function Home() {
           <div className='text-center py-10'>
 
           <h3 className='text-xl font-bold text-blue-jay'>July 4-6, 2024</h3>
-          <h3 className='text-xl font-bold text-blue-jay'>Shangri-La Mactan, Cebu Philippines</h3>
+          <h3 className='text-xl font-bold text-blue-jay'>Shangri-La Mactan Hotel, Cebu Philippines</h3>
 
           </div>
 
@@ -201,7 +201,7 @@ export default function Home() {
           </h3>
 
           <p className='text-ivory leading-loose my-8 text-lg'>
-            Experience the epitome of luxurious learning at OSAPS 2024 Cebu, hosted in the stunning Shangri-La Mactan Cebu. This prestigious event offers attendees an upscale and comfortable educational experience. Immerse yourself in a setting where knowledge and opulence converge, making OSAPS 2024 an unforgettable journey into the world of aesthetic surgery.
+            Experience the epitome of luxurious learning at OSAPS 2024 Cebu, hosted in the stunning Shangri-La Mactan Hotel, Cebu. This prestigious event offers attendees an upscale and comfortable educational experience. Immerse yourself in a setting where knowledge and opulence converge, making OSAPS 2024 an unforgettable journey into the world of aesthetic surgery.
           </p>
 
           </div>
