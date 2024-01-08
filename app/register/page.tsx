@@ -44,7 +44,7 @@ export default function page(){
             <p className='text-gray-800 my-4 font-normal mx-8'>Exclusive discounts available for PAPRAS and PBPS affiliates upon checkout!</p>
 
             <p className='text-gray-800 my-8 text-xl leading-10 font-normal mx-8'>
-            Maximize your participation by adding the Gala Night to your registration, or register a guest or companion to enhance your OSAPS 2024 experience
+            Enhance your OSAPS 2024 experience by including the Gala Night Dinner on <span className='font-bold'>July 5, 2024</span>, with your registration. Alternatively, register a guest or companion to maximize participation!
             </p>
 
             <AddonsTable />
