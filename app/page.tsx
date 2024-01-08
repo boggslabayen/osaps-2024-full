@@ -284,7 +284,7 @@ export default function Home() {
             alt='icon for sparkle'
             />
    
-             <p className='text-center pt-4'><span className='font-bold'>Uncover cutting-edge knowledge</span> and emerging trends to keep you at the forefront of the ever-evolving field of aesthetic surgery.\</p>
+             <p className='text-center pt-4'><span className='font-bold'>Uncover cutting-edge knowledge</span> and emerging trends to keep you at the forefront of the ever-evolving field of aesthetic surgery.</p>
             </div>
 
             <div className='   py-4 flex flex-col items-center mx-8'>
