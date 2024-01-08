@@ -4,6 +4,12 @@ const TABLE_HEAD = ["","Early-Bird Rate", "Standard Rate", "On-site Rate" ];
  
 const TABLE_ROWS = [
   {
+    type: "",
+    ebrate: "June 1, 2024",
+    srate: "June 2- July 3, 2024",
+    osrate: "July 4-6, 2024"
+  },
+  {
     type: "International Plastic Surgeons",
     ebrate: "USD $500",
     srate: "USD $650",

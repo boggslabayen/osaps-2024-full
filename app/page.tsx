@@ -1,113 +1,346 @@
+'use client'
+
 import Image from 'next/image'
+import * as React from 'react';
+import StickyNavbar from "./ui/components/Navbar";
+import Welcomemessage from './ui/components/Welcomemessage';
+import DocFlor from './ui/images/Doc_Flor.png';
+import DocGene from './ui/images/Doc_Gene.png';
+import Hero from './ui/images/Banner.png'
+import EventLogo from './ui/images/Logo_theme.png'
+import { Button } from './ui/mtwexport';
+import Link from 'next/link';
+import PaprasLogo from './ui/images/papras_logo.png';
+import osapsLogo from './ui/images/osaps_logo.png';
+import Jetski from './ui/images/jetski.png'
+import Icon001 from './ui/images/icon/001.png';
+import Icon002 from './ui/images/icon/002.png';
+import Icon003 from './ui/images/icon/003.png';
+import Icon004 from './ui/images/icon/004.png';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="">
+       <StickyNavbar />
+       <div className='bg-coral-blue h-4/5 py-8 md:py-20'>
+
+
+        <div className='flex flex-col md:relative  right-80  z-40'>
+          
+        
+         <Image 
+             src={EventLogo}
+             width={0}
+             height={0}
+             className='mx-fit mx-auto 
+             '
+             alt='logo'
+             />
+
+          <div className='text-center py-10'>
+
+          <h3 className='text-xl font-bold text-blue-jay'>July 4-6, 2024</h3>
+          <h3 className='text-xl font-bold text-blue-jay'>Shangri-La Mactan, Cebu Philippines</h3>
+
+          </div>
+
+          <div className='text-center'>
+            <Link href="/register" >
+
+                <Button
+                variant="filled"
+                size="md"
+                className="lg:inline-block rounded-full bg-amber-500 text-gray-800 font-bold mb-3"
+                 >
+                Register
+                </Button>
+                
+                </Link>
+
+            <p>Early bird rate ends on 06/01/2024 </p>
+          </div>
+          
+
+
         </div>
+
+        <Image 
+             src={Hero}
+             width={0}
+             height={0}
+             className='mx-fit h-3/4 mx-auto hidden md:block md:absolute inset-x-0 -top-2 z-0
+             '
+             alt='girl smiling'
+             />
+
+       </div>
+
+
+
+      <div className=' bg-ivory py-4'>
+      
+      <div className='md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0'>
+
+        <div className='md:w-2/3 md:mr-4'>
+          <h3 className='text-2xl md:text-4xl font-bold text-blue-jay mb-8'>
+            Be part of an exciting global exchange of knowledge and expertise showcasing Asian beauty in the world of aesthetic plastic surgery
+          </h3>
+        </div>
+
+        <div>
+
+        <div className='flex items-center pb-4'>
+
+          <div className='pr-4'>
+            <Image 
+             src={osapsLogo.src}
+             width={90}
+             height={90}
+             className=''
+             alt='Osaps Logo'
+             />
+          </div>
+
+          <div className='flex flex-col'>
+          <p>18th International Congress</p>
+          <h3 className='text-xl font-bold'>Oriental Society of Aesthetic Plastic Surgeons</h3>
+          </div>
+
+        </div>
+
+        <div className='flex items-center'>
+
+          <div className='pr-4'>
+            <Image 
+             src={PaprasLogo.src}
+             width={135}
+             height={135}
+             className=''
+             alt='Papras Logo'
+             />
+          </div>
+
+          <div className='flex flex-col'>
+          <p>11th National Meeting</p>
+          <h3 className='text-xl font-bold'>Philippine Association of Plastic Reconstructive and Aesthetic Surgeons</h3>
+          </div>
+
+        </div>
+
+        </div>
+
+
+
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      </div> 
+       
+
+
+       <div>
+
+
+       
+      <Welcomemessage
+        message="We will be gathering once again for the 18th Congress of the Oriental Society of Aesthetic Plastic Surgery. 
+        I am pleased and proud to announce that the Congress will be hosted by my Society, the Philippine Association of Plastic Reconstructive & Aesthetic Surgeons on July 4-6, 2024 in Cebu, Philippines.  The host prepared a well rounded Program to highlight Asian Aesthetics. 
+        Come one and all to share our knowledge talents and experiences in Aesthetic Surgery as it pertains to the concept of Asian beauty. "
+        src={DocFlor.src}
+        alt='Doc Flor Image'
+        doc="Dr. Florencio Q. Lucero M.D."
+        role="Secretary-General"
+        society="Oriental Society of Aesthetic Plastic Surgery (OSAPS)"
+        
+      />
+
+      <div className='mx-auto max-w-fit lg:max-w-screen-xl my-12 py-4  '>
+        <div className='lg:flex items-center mx-2'>
+
+          <Image 
+             src={DocGene.src}
+             width={200}
+             height={200}
+             className='w-1/3 lg:order-last'
+             alt='Doc Gene Image'
+             />
+
+          <div className='lg:w-2/3 pr-6'>
+
+          <p className='text-gray-800 my-4 font-normal text-lg leading-10'>
+         We are glad to announce and host our upcoming Congress in <span className='font-bold'>2024: the 18th International Congress of the Oriental Society of Aesthetic Plastic Surgery (OSAPS) and the 11th National Meeting of the Philippine Association of Plastic Reconstructive and Aesthetic Surgeons, Inc. (PAPRAS).</span> This event will be attended by distinguished Plastic Surgeons from Asia and all over the world. This prestigious Congress will provide a platform for renowned experts to share their knowledge, exchange innovative ideas, and discuss the latest advancements in Aesthetic Plastic Surgery. With a diverse range of topics and interactive sessions, this Congress aims to foster collaboration and elevate the standards of aesthetic plastic surgery globally. 
+        This event is set to take place from July 4 to 6, 2024,at the luxurious Shangri-La Mactan in Cebu, Philippines. The theme of thiscongress is <span className='font-bold'>"Harmony in Diversity: Oriental Beauty as a Global Standard in Aesthetic Plastic Surgery."</span> As the world becomes more interconnected, the beauty standards of different cultures converge and create a global tapestry of aesthetics. The congress aims to explore the diverse aspects of Oriental beauty
+        and how they influence and enrich the field of aesthetic plastic surgery worldwide. Our distinguished panel of experts, renowned for their pioneering work in aesthetic surgery, will share their insights, expertise, and innovative techniques during the meeting.
+          </p>
+
+          <h3 className='text-xl font-bold text-blue-jay'> Dr. Gene Gerald SJ Tiongco, MD </h3>
+          <p className='text-gray-600 font-normal text-lg'>President</p>
+          <p className='text-gray-600 font-normal text-lg'>Philippine Association of Plastic Reconstructive and Aesthetic Surgeons (PAPRAS)</p>
+
+          </div>
+          
+
+         
+
+
+        </div>
+        
+
+
+       </div>
+
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div className='bg md:py-8'>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <div className='flex mx-auto max-w-fit lg:max-w-screen-xl my-12 py-4 justify-between items-center'>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <div className='flex flex-col md:w-6/12 md:mr-8 mx-2 md:mx-0'>
+          <div>
+          <h3 className='text-ivory font-bold text-2xl md:text-4xl md:pb-4'>
+            INDULGE YOURSELF IN A LUXURIOUS LEARNING
+          </h3>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p className='text-ivory leading-loose my-8 text-lg'>
+            Experience the epitome of luxurious learning at OSAPS 2024 Cebu, hosted in the stunning Shangri-La Mactan Cebu. This prestigious event offers attendees an upscale and comfortable educational experience. Immerse yourself in a setting where knowledge and opulence converge, making OSAPS 2024 an unforgettable journey into the world of aesthetic surgery.
           </p>
-        </a>
+
+          </div>
+
+          <div>
+
+            
+            <Link href="/register" >
+
+                <Button
+                variant="filled"
+                size="md"
+                className="lg:inline-block rounded-full bg-amber-500 text-gray-800 font-bold mb-3"
+                 >
+                Register
+                </Button>
+                
+                </Link>
+
+          
+
+          </div>
+        </div>
+
+        <div className='w-2/5 hidden md:block'>
+          <Image 
+          src={Jetski.src}
+          width={450}
+          height={534}
+          alt='Jetski couple'
+          />
+        </div>
+
+        </div>
+
+
       </div>
+
+      <div className='mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0'>
+        <div className=''>
+          <h3 className='text-2xl md:text-4xl font-bold text-blue-jay text-center'>Why you should attend Harmony in Diversity?</h3>
+        </div>
+
+        <div className='md:grid grid-cols-2 md:my-10 justify-between gap-8'>
+
+          
+          
+
+          
+           <div className='  py-4  flex flex-col items-center mx-8'>
+            <Image 
+            src={Icon002.src}
+            width={80}
+            height={80}
+            className=''
+            alt='icon for forms'
+            />
+   
+             <p className='text-center pt-4'><span className='font-bold'>Gain a global perspective</span> on the evolving landscape of aesthetic plastic surgery</p>
+            </div>
+
+            <div className='   py-4 flex flex-col items-center mx-8'>
+            <Image 
+            src={Icon001.src}
+            width={80}
+            height={80}
+            className=''
+            alt='icon for bulb'
+            />
+   
+             <p className='text-center pt-4'><span className='font-bold'>Learn and network</span> with globally-renowned leaders in the field of aesthetic surgery</p>
+            </div>
+
+            <div className='  py-4  flex flex-col items-center mx-8'>
+            <Image 
+            src={Icon003.src}
+            width={80}
+            height={80}
+            className=''
+            alt='icon for sparkle'
+            />
+   
+             <p className='text-center pt-4'><span className='font-bold'>Uncover cutting-edge knowledge</span> and emerging trends to keep you at the forefront of the ever-evolving field of aesthetic surgery.\</p>
+            </div>
+
+            <div className='   py-4 flex flex-col items-center mx-8'>
+            <Image 
+            src={Icon004.src}
+            width={80}
+            height={80}
+            className=''
+            alt='icon for fellows'
+            />
+   
+             <p className='text-center pt-4'><span className='font-bold'>Connect with fellow plastic surgeons</span> who share your goals and aspirations in the field of aesthetic surgery.</p>
+            </div>
+
+          
+
+         
+
+          
+
+
+        </div>
+
+        <div className='flex justify-center'>
+
+            
+            <Link href="/register" >
+
+                <Button
+                variant="filled"
+                size="md"
+                className="lg:inline-block rounded-full bg-amber-500 text-gray-800 font-bold mb-3"
+                 >
+                Register
+                </Button>
+                
+                </Link>
+
+          
+
+          </div>
+
+        
+
+
+      </div>
+
+
+
+   
+
+
+
+      
+      
+     
     </main>
   )
 }

@@ -6,3 +6,11 @@
 body {
 
 }
+
+
+.bg {
+    background-image: url('./ui/images/bg_shang.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

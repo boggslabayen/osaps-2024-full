@@ -11,9 +11,9 @@ const TABLE_ROWS = [
   },
   {
     type: "2024 OSAPS Gala Night",
-    ebrate: "USD $50 / Php 2,600",
-    srate: "USD $50 / Php 2,600",
-    osrate: "USD $50 / Php 2,600"
+    ebrate: "USD $50 / Php 2,750",
+    srate: "USD $50 / Php 2,750",
+    osrate: "USD $50 / Php 2,750"
   },
 ];
  

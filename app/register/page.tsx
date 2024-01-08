@@ -28,7 +28,7 @@ export default function page(){
 
         <BannerWithImageButton 
         header='Secure your spot at OSAPS 2024:Register today!'
-        caption="Early bird ends on 02/29/2024"
+        caption="Early bird ends on 06/01/2024"
         src={Picture.src}
         imageAlt='Cebu Picture'
         buttonTitle="Register Now"
@@ -44,10 +44,14 @@ export default function page(){
             <p className='text-gray-800 my-4 font-normal mx-8'>Exclusive discounts available for PAPRAS and PBPS affiliates upon checkout!</p>
 
             <p className='text-gray-800 my-8 text-xl leading-10 font-normal mx-8'>
-            Maximize your participation by adding the Gala Night and Fillers Master Class to your registration, or register a guest or companion to enhance your OSAPS 2024 experience
+            Maximize your participation by adding the Gala Night to your registration, or register a guest or companion to enhance your OSAPS 2024 experience
             </p>
 
             <AddonsTable />
+
+            <p className='text-gray-800 my-8 text-xl leading-10 font-normal mx-8'>
+            *Additional Guests -  Registrants have the option to register one spouse or guest. The guest registration covers Exhibit Hall access, lunch and refreshment breaks with exhibitors. Guests are not permitted in educational sessions and guests may not claim CME credit.
+            </p>
         
 
         </div>
@@ -111,9 +115,15 @@ export default function page(){
 
         </div>
 
-        <Link href='https://forms.gle/T8PMEEi4zRDm6yN46' target='_blank'>
-            <Button variant='filled' className='bg-amber-500 rounded-full text-blue-jay mx-8' size='lg' ripple={true}>Register Now</Button>
-            </Link>
+            <div className='flex justify-center'>
+
+                <Link href='https://forms.gle/T8PMEEi4zRDm6yN46' target='_blank'>
+                <Button variant='filled' className='bg-amber-500 rounded-full text-blue-jay mx-8' size='lg' ripple={true}>Register Now</Button>
+                </Link>
+
+            </div>
+
+            
         
         
 

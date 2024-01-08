@@ -41,6 +41,7 @@ export default function StickyNavbar() {
           >
             OSAPS 2024
           </Typography> */}
+          <Link href='/'>
 
           <Image 
              src={Logopng}
@@ -49,6 +50,9 @@ export default function StickyNavbar() {
              className=''
              alt='logo OSAPS 2024'
              />
+          
+          </Link>
+          
 
           {/* <div className='flex hidden md:block'>
                     
