@@ -30,7 +30,7 @@ export default function Home() {
           
         
          <Image 
-             src={EventLogo.src}
+             src={EventLogo}
              width={0}
              height={0}
              className='mx-fit mx-auto 
@@ -65,7 +65,8 @@ export default function Home() {
 
         </div>
 
-        <Image src={Hero.src}
+        <Image 
+            src={Hero}
              width={0}
              height={0}
              className='mx-fit h-3/4 mx-auto hidden md:block md:absolute inset-x-0 -top-2 z-0'
@@ -136,7 +137,7 @@ export default function Home() {
        
 
 
-       {/* <div>
+       <div>
 
 
        
@@ -167,7 +168,7 @@ export default function Home() {
 
           <p className='text-gray-800 my-4 font-normal text-lg leading-10'>
          We are glad to announce and host our upcoming Congress in <span className='font-bold'>2024: the 18th International Congress of the Oriental Society of Aesthetic Plastic Surgery (OSAPS) and the 11th National Meeting of the Philippine Association of Plastic Reconstructive and Aesthetic Surgeons, Inc. (PAPRAS).</span> This event will be attended by distinguished Plastic Surgeons from Asia and all over the world. This prestigious Congress will provide a platform for renowned experts to share their knowledge, exchange innovative ideas, and discuss the latest advancements in Aesthetic Plastic Surgery. With a diverse range of topics and interactive sessions, this Congress aims to foster collaboration and elevate the standards of aesthetic plastic surgery globally. 
-        This event is set to take place from July 4 to 6, 2024,at the luxurious Shangri-La Mactan in Cebu, Philippines. The theme of thiscongress is <span className='font-bold'>&quot;Harmony in Diversity: Oriental Beauty as a Global Standard in Aesthetic Plastic Surgery.&quot;</span> As the world becomes more interconnected, the beauty standards of different cultures converge and create a global tapestry of aesthetics. The congress aims to explore the diverse aspects of Oriental beauty
+        This event is set to take place from July 4 to 6, 2024,at the luxurious Shangri-La Mactan in Cebu, Philippines. The theme of thiscongress is <span className='font-bold'>'Harmony in Diversity: Oriental Beauty as a Global Standard in Aesthetic Plastic Surgery'</span> As the world becomes more interconnected, the beauty standards of different cultures converge and create a global tapestry of aesthetics. The congress aims to explore the diverse aspects of Oriental beauty
         and how they influence and enrich the field of aesthetic plastic surgery worldwide. Our distinguished panel of experts, renowned for their pioneering work in aesthetic surgery, will share their insights, expertise, and innovative techniques during the meeting.
           </p>
 
@@ -187,7 +188,7 @@ export default function Home() {
 
        </div>
 
-      </div> */}
+      </div>
 
       <div className='bg md:py-8'>
 
