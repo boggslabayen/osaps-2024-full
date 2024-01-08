@@ -22,6 +22,7 @@ export default function Home() {
   return (
     <main className="">
        <StickyNavbar />
+
        <div className='bg-coral-blue h-4/5 py-8 md:py-20'>
 
 
@@ -64,14 +65,12 @@ export default function Home() {
 
         </div>
 
-        <Image 
-             src={Hero.src}
+        <Image src={Hero.src}
              width={0}
              height={0}
-             className='mx-fit h-3/4 mx-auto hidden md:block md:absolute inset-x-0 -top-2 z-0
-             '
+             className='mx-fit h-3/4 mx-auto hidden md:block md:absolute inset-x-0 -top-2 z-0'
              alt='girl smiling'
-             />
+         />
 
        </div>
 
@@ -79,17 +78,17 @@ export default function Home() {
 
       <div className=' bg-ivory py-4'>
       
-      <div className='md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0'>
+        <div className='md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0'>
 
-        <div className='md:w-2/3 md:mr-4'>
-          <h3 className='text-2xl md:text-4xl font-bold text-blue-jay mb-8'>
+          <div className='md:w-2/3 md:mr-4'>
+            <h3 className='text-2xl md:text-4xl font-bold text-blue-jay mb-8'>
             Be part of an exciting global exchange of knowledge and expertise showcasing Asian beauty in the world of aesthetic plastic surgery
-          </h3>
-        </div>
+            </h3>
+          </div>
 
-        <div>
+          <div>
 
-        <div className='flex items-center pb-4'>
+          <div className='flex items-center pb-4'>
 
           <div className='pr-4'>
             <Image 
@@ -106,9 +105,9 @@ export default function Home() {
           <h3 className='text-xl font-bold'>Oriental Society of Aesthetic Plastic Surgeons</h3>
           </div>
 
-        </div>
+          </div>
 
-        <div className='flex items-center'>
+          <div className='flex items-center'>
 
           <div className='pr-4'>
             <Image 
@@ -125,19 +124,19 @@ export default function Home() {
           <h3 className='text-xl font-bold'>Philippine Association of Plastic Reconstructive and Aesthetic Surgeons</h3>
           </div>
 
-        </div>
+          </div>
 
         </div>
 
 
 
-      </div>
+       </div>
 
       </div> 
        
 
 
-       <div>
+       {/* <div>
 
 
        
@@ -188,7 +187,7 @@ export default function Home() {
 
        </div>
 
-      </div>
+      </div> */}
 
       <div className='bg md:py-8'>
 
