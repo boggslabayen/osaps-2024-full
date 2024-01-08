@@ -29,7 +29,7 @@ export default function Home() {
           
         
          <Image 
-             src={EventLogo}
+             src={EventLogo.src}
              width={0}
              height={0}
              className='mx-fit mx-auto 
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         <Image 
-             src={Hero}
+             src={Hero.src}
              width={0}
              height={0}
              className='mx-fit h-3/4 mx-auto hidden md:block md:absolute inset-x-0 -top-2 z-0
