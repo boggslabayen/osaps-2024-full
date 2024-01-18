@@ -61,7 +61,7 @@ export default function Home() {
           src={Hero}
           width={0}
           height={0}
-          className="mx-fit h-3/4 mx-auto hidden md:block md:absolute inset-x-0 -top-2 z-0"
+          className="mx-fit h-3/5 mx-auto hidden md:block md:absolute inset-x-0 -top-2 z-0"
           alt="girl smiling"
         />
       </div>
@@ -275,7 +275,7 @@ export default function Home() {
       <div className="mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0">
         <div className="">
           <h3 className="text-2xl md:text-4xl font-bold text-blue-jay text-center">
-            Why you should attend Harmony in Diversity?
+            Why you should attend OSAPS 2024: Harmony in Diversity?
           </h3>
         </div>
 
