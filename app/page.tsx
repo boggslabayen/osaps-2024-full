@@ -19,101 +19,101 @@ import Icon002 from "./ui/images/icon/002.png";
 import Icon003 from "./ui/images/icon/003.png";
 import Icon004 from "./ui/images/icon/004.png";
 import Head from "next/head";
+import Footer from "./ui/components/Footer";
 
 export default function Home() {
   return (
     <main className="">
       <StickyNavbar />
 
-      <div className="bg-coral-blue h-4/5 py-8 md:py-14">
-        <div className="flex flex-col md:relative  right-80  z-30">
-          <Image
-            src={EventLogo}
-            width={0}
-            height={0}
-            className="mx-fit mx-auto 
-             "
-            alt="logo"
-          />
+      <div className=" bg-gray-50 py-8">
+        <div className="md:flex mx-auto max-w-fit lg:max-w-screen-xl px-4 md:px-0">
+          <div className="flex items-center pb-4">
+            <div className="pr-4">
+              <Image
+                src={PaprasLogo.src}
+                width={150}
+                height={90}
+                className=""
+                alt="Osaps Logo"
+              />
+            </div>
 
-          <div className="text-center py-10">
-            <h3 className="text-xl font-bold text-blue-jay">July 4-6, 2024</h3>
-            <h3 className="text-xl font-bold text-blue-jay">
-              Shangri-La Mactan Hotel, Cebu Philippines
-            </h3>
+            <div className="flex flex-col">
+              <p>11th National Meeting</p>
+              <h3 className="text-xl font-bold md:w-4/6">
+                Philippine Association of Plastic Reconstructive and Aesthetic
+                Surgeons
+              </h3>
+            </div>
           </div>
 
-          <div className="text-center">
-            <Link href="/register">
-              <Button
-                variant="filled"
-                size="md"
-                className="lg:inline-block rounded-full bg-amber-500 text-gray-800 font-bold mb-3">
-                Register
-              </Button>
-            </Link>
+          <div className="flex items-center pb-4">
+            <div className="pr-4">
+              <Image
+                src={osapsLogo.src}
+                width={90}
+                height={90}
+                className=""
+                alt="Osaps Logo"
+              />
+            </div>
 
-            <p>Early bird rate ends on 06/01/2024 </p>
+            <div className="flex flex-col">
+              <p>18th International Congress</p>
+              <h3 className="text-xl font-bold">
+                Oriental Society of Aesthetic Plastic Surgeons
+              </h3>
+            </div>
           </div>
         </div>
+      </div>
 
-        <Image
-          src={Hero}
-          width={0}
-          height={0}
-          className="mx-fit h-3/5 mx-auto hidden md:block md:absolute inset-x-0 -top-2 z-0"
-          alt="girl smiling"
-        />
+      <div className="md:bg-center md:bg-no-repeat md:bg-[url('./ui/images/Banner.png')] md:bg-cover mix-blend-screen bg-coral-blue ">
+        <div className="h-max py-8 md:py-14">
+          <div className="flex flex-col md:relative  right-80  z-30">
+            <Image
+              src={EventLogo}
+              width={0}
+              bg-cover
+              height={0}
+              className="mx-fit mx-auto 
+             "
+              alt="logo"
+            />
+
+            <div className="text-center py-10">
+              <h3 className="text-xl font-bold text-blue-jay">
+                July 4-6, 2024
+              </h3>
+              <h3 className="text-xl font-bold text-blue-jay">
+                Shangri-La Mactan Hotel, Cebu Philippines
+              </h3>
+            </div>
+
+            <div className="text-center">
+              <Link href="/register">
+                <Button
+                  variant="filled"
+                  size="lg"
+                  className="lg:inline-block rounded-full bg-amber-500 text-gray-800 font-bold mb-3">
+                  Register
+                </Button>
+              </Link>
+
+              <p>Early bird rate ends on 06/01/2024 </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className=" bg-ivory py-4">
         <div className="md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0">
-          <div className="md:w-2/3 md:mr-4">
-            <h3 className="text-2xl md:text-4xl font-bold text-blue-jay mb-8">
+          <div className="md:mr-4">
+            <h3 className="text-2xl text-center md:text-4xl font-bold text-blue-jay mb-8">
               Be part of an exciting global exchange of knowledge and expertise
               showcasing Asian beauty in the world of aesthetic plastic surgery
             </h3>
-          </div>
-
-          <div>
-            <div className="flex items-center pb-4">
-              <div className="pr-4">
-                <Image
-                  src={osapsLogo.src}
-                  width={90}
-                  height={90}
-                  className=""
-                  alt="Osaps Logo"
-                />
-              </div>
-
-              <div className="flex flex-col">
-                <p>18th International Congress</p>
-                <h3 className="text-xl font-bold">
-                  Oriental Society of Aesthetic Plastic Surgeons
-                </h3>
-              </div>
-            </div>
-
-            <div className="flex items-center">
-              <div className="pr-4">
-                <Image
-                  src={PaprasLogo.src}
-                  width={135}
-                  height={135}
-                  className=""
-                  alt="Papras Logo"
-                />
-              </div>
-
-              <div className="flex flex-col">
-                <p>11th National Meeting</p>
-                <h3 className="text-xl font-bold">
-                  Philippine Association of Plastic Reconstructive and Aesthetic
-                  Surgeons
-                </h3>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -356,6 +356,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
