@@ -13,7 +13,7 @@ export default function Footer() {
             </p>
             <p className="text-gray-50 font-bold">
               Philippine Association of Plastic Reconstructive and Aesthetic
-              Surgeons
+              Surgeons (PAPRAS)
             </p>
           </div>
         </div>
