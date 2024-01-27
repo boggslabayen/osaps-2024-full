@@ -1,27 +1,35 @@
 "use client";
- 
 
+import {
+  Navbar,
+  Collapse,
+  Typography,
+  Button,
+  IconButton,
+  Avatar,
+  Select,
+  Option,
+  Card,
+  Tabs,
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+} from "@material-tailwind/react";
 
- import {
-    Navbar,
-    Collapse,
-    Typography,
-    Button,
-    IconButton,
-    Avatar,
-    Select,
-    Option,
-    Card
-  } from "@material-tailwind/react";
- 
-export { 
-    Navbar,
-    Collapse,
-    Typography,
-    Button,
-    IconButton,
-    Avatar,
-    Select,
-    Option,
-    Card
- };
+export {
+  Navbar,
+  Collapse,
+  Typography,
+  Button,
+  IconButton,
+  Avatar,
+  Select,
+  Option,
+  Card,
+  Tabs,
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+};

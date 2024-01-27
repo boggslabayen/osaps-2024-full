@@ -26,49 +26,6 @@ export default function Home() {
     <main className="">
       <StickyNavbar />
 
-      <div className=" bg-gray-50 py-8">
-        <div className="md:flex mx-auto max-w-fit lg:max-w-screen-xl px-4 md:px-0">
-          <div className="flex items-center pb-4">
-            <div className="pr-4">
-              <Image
-                src={PaprasLogo.src}
-                width={150}
-                height={90}
-                className=""
-                alt="Osaps Logo"
-              />
-            </div>
-
-            <div className="flex flex-col">
-              <p>11th National Meeting</p>
-              <h3 className="text-xl font-bold md:w-4/6">
-                Philippine Association of Plastic Reconstructive and Aesthetic
-                Surgeons
-              </h3>
-            </div>
-          </div>
-
-          <div className="flex items-center pb-4">
-            <div className="pr-4">
-              <Image
-                src={osapsLogo.src}
-                width={90}
-                height={90}
-                className=""
-                alt="Osaps Logo"
-              />
-            </div>
-
-            <div className="flex flex-col">
-              <p>18th International Congress</p>
-              <h3 className="text-xl font-bold">
-                Oriental Society of Aesthetic Plastic Surgeons
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="md:bg-center md:bg-no-repeat md:bg-[url('./ui/images/Banner.png')] md:bg-cover mix-blend-screen bg-coral-blue ">
         <div className="h-max py-8 md:py-14">
           <div className="flex flex-col md:relative  right-80  z-30">
@@ -108,12 +65,55 @@ export default function Home() {
       </div>
 
       <div className=" bg-ivory py-4">
-        <div className="md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0">
-          <div className="md:mr-4">
-            <h3 className="text-2xl text-center md:text-4xl font-bold text-blue-jay mb-8">
-              Be part of an exciting global exchange of knowledge and expertise
-              showcasing Asian beauty in the world of aesthetic plastic surgery
-            </h3>
+        <div className="md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0 justify-between">
+          <h3 className="text-4xl leading-relaxed font-bold text-blue-jay mb-8 md:w-3/5">
+            Be part of an exciting global exchange of knowledge and expertise
+            showcasing Asian beauty in the world of aesthetic plastic surgery
+          </h3>
+
+          <div className="md:w-2/5">
+            <div className="pb-4">
+              <div className="flex items-center pb-4">
+                <div className="pr-4">
+                  <Image
+                    src={osapsLogo.src}
+                    width={100}
+                    height={100}
+                    className=""
+                    alt="Osaps Logo"
+                  />
+                </div>
+
+                <div className="flex flex-col">
+                  <p>18th International Congress</p>
+                  <h3 className="text-2xl font-bold w-full">
+                    Oriental Society of Aesthetic Plastic Surgeons
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center pb-4">
+                <div className="pr-4">
+                  <Image
+                    src={PaprasLogo.src}
+                    width={160}
+                    height={160}
+                    className=""
+                    alt="Papras Logo"
+                  />
+                </div>
+
+                <div className="flex flex-col">
+                  <p>11th National Meeting</p>
+                  <h3 className="text-2xl font-bold w-full">
+                    Philippine Association of Plastic Reconstructive and
+                    Aesthetic Surgeons
+                  </h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
