@@ -1,4 +1,12 @@
 import Link from "next/link";
+import {
+  ReactElement,
+  JSXElementConstructor,
+  ReactNode,
+  ReactPortal,
+  PromiseLikeOfReactNode,
+} from "react";
+import { UrlObject } from "url";
 
 export default function SponsorCard() {
   const sponsorType = [
@@ -32,7 +40,39 @@ export default function SponsorCard() {
     },
   ];
 
-  function CreateCard(sponsorType) {
+  function CreateCard(sponsorType: {
+    title:
+      | string
+      | number
+      | boolean
+      | ReactElement<any, string | JSXElementConstructor<any>>
+      | Iterable<ReactNode>
+      | ReactPortal
+      | PromiseLikeOfReactNode
+      | null
+      | undefined;
+    amount:
+      | string
+      | number
+      | boolean
+      | ReactElement<any, string | JSXElementConstructor<any>>
+      | Iterable<ReactNode>
+      | ReactPortal
+      | PromiseLikeOfReactNode
+      | null
+      | undefined;
+    desc:
+      | string
+      | number
+      | boolean
+      | ReactElement<any, string | JSXElementConstructor<any>>
+      | Iterable<ReactNode>
+      | ReactPortal
+      | PromiseLikeOfReactNode
+      | null
+      | undefined;
+    link: string | UrlObject;
+  }) {
     return (
       <div className="border-2 rounded-md border-solid px-10 py-12 mb-4 md:mb-0">
         <h3 className="text-2xl font-black text-blue-jay text-center pb-2">
