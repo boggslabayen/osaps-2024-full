@@ -19,7 +19,7 @@ import Balut from "@/app/ui/images/toEat/Balut.png";
 import Halo from "@/app/ui/images/toEat/Halo-Halo.png";
 import Fresh from "@/app/ui/images/toEat/Fruits.png";
 import Pastries from "@/app/ui/images/toEat/DriedMangoes.png";
-import Puso from "@/app/ui/images/toEat/puso.png";
+import Puso from "@/app/ui/images/toEat/Puso.png";
 
 export default function ThingstoEat() {
   const toEat = [
