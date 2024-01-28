@@ -116,14 +116,28 @@ export default function StickyNavbar() {
           </div>
         </div>
         <Collapse open={openNav}>
-          {/* <div className='text-center'>
-
-                    <Link href="/speakers" className='px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block'>Speakers</Link>
-                    <Link href="/abstract" className='px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block'>Abstract</Link>
-                    <Link href="/speakers" className='px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block'>Speakers</Link>
-                    <Link href="/abstract" className='px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block'>Abstract</Link>
-                    
-                </div> */}
+          <div className="text-center">
+            <Link
+              href="/speakers"
+              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block">
+              Speakers
+            </Link>
+            <Link
+              href="/abstract"
+              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block">
+              Abstract
+            </Link>
+            <Link
+              href="/speakers"
+              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block">
+              Speakers
+            </Link>
+            <Link
+              href="/abstract"
+              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block">
+              Abstract
+            </Link>
+          </div>
 
           <div className="flex items-center gap-x-1 justify-center py-4">
             <Button
