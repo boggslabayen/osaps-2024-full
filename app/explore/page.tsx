@@ -13,7 +13,7 @@ import { useState } from "react";
 import { Tabs, TabsHeader, TabsBody, Tab, TabPanel } from "@/app/ui/mtwexport";
 import Footer from "../ui/components/Footer";
 
-function page() {
+function Page() {
   const [activeTab, setActiveTab] = useState("Getting to Cebu");
 
   const data = [
@@ -87,4 +87,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
