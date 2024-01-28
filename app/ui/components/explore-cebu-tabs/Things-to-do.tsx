@@ -94,7 +94,7 @@ export default function ThingstoDo() {
     },
   ];
 
-  function createCard(toDo: {
+  function CreateCard(toDo: {
     id:
       | string
       | number
@@ -163,7 +163,7 @@ export default function ThingstoDo() {
         </div>
         <div className="grid justify-around  mx-auto max-w-fit lg:max-w-screen-xl">
           <div className="md:grid grid-cols-2 gap-4">
-            {toDo.map(createCard)}
+            {toDo.map(CreateCard)}
           </div>
         </div>
       </div>
