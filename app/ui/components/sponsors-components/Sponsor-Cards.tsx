@@ -32,7 +32,7 @@ export default function SponsorCard() {
     },
   ];
 
-  function createCard(sponsorType) {
+  function CreateCard(sponsorType) {
     return (
       <div className="border-2 rounded-md border-solid px-10 py-12 mb-4 md:mb-0">
         <h3 className="text-2xl font-black text-blue-jay text-center pb-2">
@@ -59,7 +59,7 @@ export default function SponsorCard() {
         Sponsorship / Exhibition Opportunities
       </h3>
       <div className="md:grid grid-cols-2 gap-8 mx-8 md:mx-0">
-        {sponsorType.map(createCard)}
+        {sponsorType.map(CreateCard)}
       </div>
     </div>
   );
