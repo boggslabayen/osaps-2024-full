@@ -14,12 +14,12 @@ import Lechon from "@/app/ui/images/toEat/lechon.png";
 import Danggit from "@/app/ui/images/toEat/danggit.png";
 import Sutukil from "@/app/ui/images/toEat/Sutukil.png";
 import Chorizo from "@/app/ui/images/toEat/Chorizo.png";
-import puso from "@/app/ui/images/toEat/puso.png";
 import Lapu from "@/app/ui/images/toEat/Lapu-Lapu.png";
 import Balut from "@/app/ui/images/toEat/Balut.png";
 import Halo from "@/app/ui/images/toEat/Halo-Halo.png";
 import Fresh from "@/app/ui/images/toEat/Fruits.png";
 import Pastries from "@/app/ui/images/toEat/DriedMangoes.png";
+import Puso from "@/app/ui/images/toEat/puso.png";
 
 export default function ThingstoEat() {
   const toEat = [
@@ -57,7 +57,7 @@ export default function ThingstoEat() {
     },
     {
       id: 5,
-      image: puso,
+      image: Puso,
       alt: "Puso",
       title: "Puso",
       description:

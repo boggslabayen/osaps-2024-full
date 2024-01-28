@@ -51,7 +51,18 @@ const topics = [
   },
 ];
 
-function createTopics(topics) {
+function createTopics(topics: {
+  topic:
+    | string
+    | number
+    | boolean
+    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    | Iterable<React.ReactNode>
+    | React.ReactPortal
+    | React.PromiseLikeOfReactNode
+    | null
+    | undefined;
+}) {
   return (
     <div>
       <div className="border-2 border-slate-50 py-8 rounded-lg h-40">
