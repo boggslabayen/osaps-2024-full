@@ -1,6 +1,13 @@
 import StickyNavbar from "@/app/ui/components/Navbar";
 import Footer from "@/app/ui/components/Footer";
 import ContactForm from "@/app/ui/components/contact-form/ContactForm";
+import {
+  ReactElement,
+  JSXElementConstructor,
+  ReactNode,
+  ReactPortal,
+  PromiseLikeOfReactNode,
+} from "react";
 
 export default function page() {
   const entitlements = [
@@ -22,7 +29,18 @@ export default function page() {
     },
   ];
 
-  function createList(entitlements) {
+  function createList(entitlements: {
+    disc:
+      | string
+      | number
+      | boolean
+      | ReactElement<any, string | JSXElementConstructor<any>>
+      | Iterable<ReactNode>
+      | ReactPortal
+      | PromiseLikeOfReactNode
+      | null
+      | undefined;
+  }) {
     return <li className="pb-8">{entitlements.disc}</li>;
   }
 
