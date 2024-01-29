@@ -26,8 +26,8 @@ export default function Home() {
     <main className="">
       <StickyNavbar />
 
-      <div className="md:bg-center md:bg-no-repeat md:bg-[url('./ui/images/Banner.png')] md:bg-cover mix-blend-screen ">
-        <div className="h-max px-16 py-16 md:py-14  bg-coral-blue">
+      <div className="sm:bg-center sm:bg-no-repeat sm:bg-[url('./ui/images/Banner.png')] sm:bg-cover ">
+        <div className="h-max px-16 py-16 md:py-14">
           <div className="flex flex-col md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0 items-start">
             <Image
               src={EventLogo}
