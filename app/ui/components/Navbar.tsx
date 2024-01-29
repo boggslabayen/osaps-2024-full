@@ -135,12 +135,14 @@ export default function StickyNavbar() {
           </div>
 
           <div className="flex items-center gap-x-1 justify-center py-4">
-            <Button
-              variant="filled"
-              size="lg"
-              className="rounded-full bg-amber-500 text-gray-800">
-              <span>Register Now</span>
-            </Button>
+            <Link href="/register">
+              <Button
+                variant="filled"
+                size="lg"
+                className="rounded-full bg-amber-500 text-gray-800">
+                <span>Register Now</span>
+              </Button>
+            </Link>
           </div>
         </Collapse>
       </Navbar>
