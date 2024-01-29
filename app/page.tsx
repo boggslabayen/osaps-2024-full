@@ -28,13 +28,13 @@ export default function Home() {
 
       <div className="md:bg-center md:bg-no-repeat md:bg-[url('./ui/images/Banner.png')] md:bg-cover mix-blend-screen bg-coral-blue ">
         <div className="h-max px-16 py-16 md:py-14">
-          <div className="flex flex-col md:relative  right-80  z-30">
+          <div className="flex flex-col md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0 items-start">
             <Image
               src={EventLogo}
               width={0}
               bg-cover
               height={0}
-              className="mx-fit mx-auto 
+              className="
              "
               alt="logo"
             />
@@ -43,12 +43,9 @@ export default function Home() {
               <h3 className="text-xl font-bold text-blue-jay">
                 July 4-6, 2024
               </h3>
-              <h3 className="text-xl font-bold text-blue-jay">
+              <h3 className="text-xl font-bold text-blue-jay pb-8">
                 Shangri-La Mactan Hotel, Cebu Philippines
               </h3>
-            </div>
-
-            <div className="text-center">
               <Link href="/register">
                 <Button
                   variant="filled"
@@ -66,7 +63,7 @@ export default function Home() {
 
       <div className=" bg-ivory py-4">
         <div className="md:flex mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0 justify-between">
-          <h3 className="text-3xl md:text-4xl leading-tight font-bold text-blue-jay mb-8 md:w-3/5">
+          <h3 className="text-3xl md:text-4xl leading-tight font-bold text-blue-jay mb-8 md:w-3/5 md:mr-8">
             Be part of an exciting global exchange of knowledge and expertise
             showcasing Asian beauty in the world of aesthetic plastic surgery
           </h3>
