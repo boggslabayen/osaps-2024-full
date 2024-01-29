@@ -123,19 +123,14 @@ export default function StickyNavbar() {
               Speakers
             </Link>
             <Link
-              href="/abstract"
+              href="/Eexplore"
               className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block">
-              Abstract
+              Explore
             </Link>
             <Link
-              href="/speakers"
+              href="/sponsors"
               className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block">
-              Speakers
-            </Link>
-            <Link
-              href="/abstract"
-              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block">
-              Abstract
+              Sponsors
             </Link>
           </div>
 

@@ -105,7 +105,7 @@ export default function ThingstoEat() {
     },
   ];
 
-  function createCard(toEat: {
+  function CreateCard(toEat: {
     id:
       | string
       | number
@@ -174,7 +174,7 @@ export default function ThingstoEat() {
         </div>
         <div className="grid justify-around  mx-auto max-w-fit lg:max-w-screen-xl">
           <div className="md:grid grid-cols-2 gap-4">
-            {toEat.map(createCard)}
+            {toEat.map(CreateCard)}
           </div>
         </div>
       </div>

@@ -51,7 +51,7 @@ const topics = [
   },
 ];
 
-function createTopics(topics: {
+function CreateTopics(topics: {
   topic:
     | string
     | number
@@ -112,7 +112,7 @@ export default function page() {
       </div>
       <div className=" mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0">
         <div className="grid grid-cols-2 gap-4  mx-auto max-w-fit lg:max-w-screen-xl my-12 px-4 md:px-0 content-center">
-          {topics.map(createTopics)}
+          {topics.map(CreateTopics)}
         </div>
       </div>
       <Footer />
