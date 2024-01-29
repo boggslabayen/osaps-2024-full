@@ -123,7 +123,7 @@ export default function StickyNavbar() {
               Speakers
             </Link>
             <Link
-              href="/Eexplore"
+              href="/explore"
               className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block">
               Explore
             </Link>
