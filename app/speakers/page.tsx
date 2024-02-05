@@ -9,7 +9,6 @@ import Prof from "../ui/images/speakers/prof.png";
 import Prof1 from "../ui/images/speakers/prof1.png";
 import UserProfile from "../ui/images/speakers/user_icon.png";
 import Image from "next/image";
-import { Avatar } from "../ui/mtwexport";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const topics = [
@@ -86,7 +85,7 @@ const topics = [
 ];
 
 function CreateTopics(topics: {
-  id: React.ReactNode;
+  id: React.Key | null | undefined;
   addedInfo: React.ReactNode;
   speakerName: React.ReactNode;
   speakerPhoto: string | StaticImport;
@@ -100,17 +99,16 @@ function CreateTopics(topics: {
     | React.PromiseLikeOfReactNode
     | null
     | undefined;
-}) {
+}): React.JSX.Element {
   return (
     <div key={topics.id}>
       <div className="border-2 border-slate-50 py-8 rounded-lg">
         <div className="flex justify-center">
-          <Avatar
+          <Image
             src={topics.speakerPhoto}
             alt="avatar"
-            width={350}
-            height={350}
-            size="xl"
+            width={100}
+            height={100}
           />
         </div>
 
