@@ -6,52 +6,90 @@ import BannerNoImage from "../ui/components/banner-no-image";
 import SpeakerDp from "../ui/components/speaker-dp";
 import Footer from "../ui/components/Footer";
 import Prof from "../ui/images/speakers/prof.png";
+import Prof1 from "../ui/images/speakers/prof1.png";
+import UserProfile from "../ui/images/speakers/user_icon.png";
 import Image from "next/image";
+import { Avatar } from "../ui/mtwexport";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const topics = [
   {
     id: 1,
     topic: "Facial Aesthetic Surgery",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
   {
     id: 2,
     topic: "Periorbital Rejuvenation",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
   {
     id: 3,
     topic: "Breast Aesthetic Surgery",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
   {
     id: 4,
     topic: "Body Contouring",
+    speakerPhoto: `${Prof1.src}`,
+    speakerName: "Ali Saalabian, MD",
+    addedInfo: "Austria",
   },
   {
     id: 5,
     topic: "Rhinoplasty",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
   {
     id: 6,
     topic: "Non-invasive aesthetic procedures & Energy devices",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
   {
     id: 7,
     topic: "Fat grafting and regenerative medicine",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
   {
     id: 8,
     topic: "Transgender health",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
   {
     id: 9,
     topic: "Breast aesthetic reconstruction",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
   {
     id: 10,
     topic: "Practice management and patient safety",
+    speakerPhoto: `${UserProfile.src}`,
+    speakerName: "To Follow",
+    addedInfo: " ",
   },
 ];
 
 function CreateTopics(topics: {
+  id: React.ReactNode;
+  addedInfo: React.ReactNode;
+  speakerName: React.ReactNode;
+  speakerPhoto: string | StaticImport;
   topic:
     | string
     | number
@@ -64,8 +102,23 @@ function CreateTopics(topics: {
     | undefined;
 }) {
   return (
-    <div>
-      <div className="border-2 border-slate-50 py-8 rounded-lg h-40">
+    <div key={topics.id}>
+      <div className="border-2 border-slate-50 py-8 rounded-lg">
+        <div className="flex justify-center">
+          <Avatar
+            src={topics.speakerPhoto}
+            alt="avatar"
+            width={350}
+            height={350}
+            size="xl"
+          />
+        </div>
+
+        <div className="pb-4">
+          <p className="font-lg text-center font-bold">{topics.speakerName}</p>
+          <p className="font-lg text-center">{topics.addedInfo}</p>
+        </div>
+
         <p className="text-xl font-body text-center">{topics.topic}</p>
       </div>
     </div>

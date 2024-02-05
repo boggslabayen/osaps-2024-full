@@ -61,7 +61,7 @@ export default function ThingstoEat() {
       alt: "Puso",
       title: "Puso",
       description:
-        "Known as 'hanging rice,' it's a serving of rice wrapped in a woven coconut leaf pouch. It's a traditional way to enjoy rice and is often served with grilled dishes.",
+        "Known as 'hanging rice',it's a serving of rice wrapped in a woven coconut leaf pouch. It's a traditional way to enjoy rice and is often served with grilled dishes.",
     },
     {
       id: 6,

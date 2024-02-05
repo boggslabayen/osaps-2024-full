@@ -8,7 +8,7 @@ import DocFlor from "./ui/images/Doc_Flor.png";
 import DocGene from "./ui/images/Doc_Gene.png";
 import DocBen from "./ui/images/Doc_Ben.png";
 import Hero from "./ui/images/Banner.png";
-import EventLogo from "./ui/images/Logo_theme.png";
+import EventLogo from "./ui/images/Asset 13.webp";
 import { Button } from "./ui/mtwexport";
 import Link from "next/link";
 import PaprasLogo from "./ui/images/papras_logo.png";
@@ -84,7 +84,7 @@ export default function Home() {
                 <div className="flex flex-col">
                   <p>18th International Congress</p>
                   <h3 className="text-2xl font-bold w-full">
-                    Oriental Society of Aesthetic Plastic Surgeons
+                    Oriental Society of Aesthetic Plastic Surgery
                   </h3>
                 </div>
               </div>
