@@ -7,6 +7,7 @@ import SpeakerDp from "../ui/components/speaker-dp";
 import Footer from "../ui/components/Footer";
 import Prof from "../ui/images/speakers/prof.png";
 import Prof1 from "../ui/images/speakers/prof1.png";
+import Prof2 from "../ui/images/speakers/prof2.png";
 import UserProfile from "../ui/images/speakers/user_icon.png";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
@@ -15,8 +16,8 @@ const topics = [
   {
     id: 1,
     topic: "Facial Aesthetic Surgery",
-    speakerPhoto: `${UserProfile.src}`,
-    speakerName: "To Follow",
+    speakerPhoto: `${Prof2.src}`,
+    speakerName: "Dr. Francisco Gomez Bravo",
     addedInfo: " ",
   },
   {

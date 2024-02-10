@@ -155,7 +155,7 @@ export default function Home() {
                 collaboration and elevate the standards of aesthetic plastic
                 surgery globally. This event is set to take place from July 4 to
                 6, 2024,at the luxurious Shangri-La Mactan in Cebu, Philippines.
-                The theme of thiscongress is{" "}
+                The theme of this congress is{" "}
                 <span className="font-bold">
                   'Harmony in Diversity: Oriental Beauty as a Global Standard in
                   Aesthetic Plastic Surgery'
